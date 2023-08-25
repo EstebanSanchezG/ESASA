@@ -83,12 +83,22 @@ export default function HeaderEsasa() {
               <IdcardOutlined/>
               <span>Quienes Somos</span>
             </Menu.Item>
-            <SubMenu selectedKeys={[current]} title={<span><ToolOutlined/>    Nuestros Servicios</span>}>
-                <Menu.ItemGroup title="Ingenierias">
-                  <Menu.Item key="IngIndus">Ingenieria Industrial</Menu.Item>
-                  <Menu.Item key="IngElec">Ingenieria Electrica</Menu.Item>
-                </Menu.ItemGroup>
+            <SubMenu selectedKeys={[current]} title={<span><ToolOutlined/>    Nuestros Servicios</span>} >
+                <Menu.Item key="DisIngEle">Diseño e Ingenieria Electromecánica</Menu.Item>
+                <Menu.Item key="InsENH">Construcción de Instalaciones
+                 Eléctricas, Neumáticas e Hidráulicas</Menu.Item>
+                <Menu.Item key="EnsaMaq">Ensamble de Máquinas</Menu.Item>
+                <Menu.Item key="SubPote">Subestaciones de Potencia</Menu.Item>
+                <Menu.Item key="TrataAgua">Sistemas de Tratamiento de Agua</Menu.Item>
+                <Menu.Item key="LinSub">Líneas Subterráneas</Menu.Item>
+                <Menu.Item key="ProcMaq">Procesos Internos de Maquiladora</Menu.Item>
+                <Menu.Item key="ManteInd">Servicios de Mantenimiento Industrial</Menu.Item>
+                <Menu.Item key="RigTP">Servicios de Rigging y Transferenciade Procesos</Menu.Item>
+                <Menu.Item key="AhorroEner">Sistemas de Ahorro de Energía</Menu.Item>
+                <Menu.Item key="InsSolar">Instalación de Paneles Solares</Menu.Item>
+                <Menu.Item key="LlavMano">Proyectos Llave en Mano</Menu.Item>
             </SubMenu>
+
           </Menu>
         </Header>
       </>
