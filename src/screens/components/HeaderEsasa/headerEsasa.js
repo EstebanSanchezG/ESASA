@@ -52,8 +52,12 @@ export default function HeaderEsasa() {
                 <Menu.Item key="LlavMano">Proyectos Llave en Mano</Menu.Item>
             </SubMenu>
             <Menu.Item key="Contacto">
-              <IdcardOutlined/>
+              <MailOutlined/>
               <span>Contáctenos</span>
+            </Menu.Item>
+            <Menu.Item key="Trabajo">
+              <TeamOutlined/>
+              <span>Oportunidades de Empleo</span>
             </Menu.Item>
           </Menu>
         </Header>
