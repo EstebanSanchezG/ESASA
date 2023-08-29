@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import HeaderEsasa from './components/HeaderEsasa/index.js';
-import LandingCarousel from './components/LandingCarousel/LandingCarousel.js';
-import  './LandingScreen.less'
+import HeaderEsasa from '../components/HeaderEsasa/index.js';
+import LandingCarousel from '../components/LandingCarousel/LandingCarousel.js';
+import  '../styles/LandingScreen.less'
 
 const contentStyle ={
     height: "160px",
