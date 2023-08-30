@@ -18,12 +18,12 @@ export default function HeaderEsasa() {
 
     return(
       <>
-        <Header>
+        <Header style={{display:"flex", backgroundColor:"white"}}>
           <Menu 
               onClick={onClick} 
               selectedKeys={[current]} 
               mode='horizontal' 
-              style={{lineHeight:"64px", fontSize:"14px", color:"gray"}}
+              style={{lineHeight:"70px", fontSize:"18px", color:"gray", display:"flex"}}
               >
             <Link to= '/'>
                 <img className="logo-icon" src={Logo} 
@@ -52,8 +52,10 @@ export default function HeaderEsasa() {
                 <Menu.Item key="LlavMano">Proyectos Llave en Mano</Menu.Item>
             </SubMenu>
             <Menu.Item key="Contacto">
-              <MailOutlined/>
-              <span>Contáctenos</span>
+              <a href = "/contacto">
+                <MailOutlined/>
+                <span>Contáctenos</span>
+              </a>
             </Menu.Item>
             <Menu.Item key="Trabajo">
               <TeamOutlined/>

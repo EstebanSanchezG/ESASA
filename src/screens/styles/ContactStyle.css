@@ -1,0 +1,19 @@
+.contacTitle {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    
+    color: #364d79;
+}
+
+.contentContacto{
+    margin: 15px;
+}
+
+
+.contacDescrip{
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 26px;
+}

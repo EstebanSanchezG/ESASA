@@ -3,6 +3,10 @@ import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import './App.css';
 import LandingPage from './screens/pages/Land';
 import IdentityPage from './screens/pages/Identidad';
+import ServicesPage from './screens/pages/Servicios';
+import ContactPage from './screens/pages/Contacto';
+import Oportunidades from './screens/pages/Oportunidades';
+
 
 function App() {
   return (
@@ -20,6 +24,8 @@ const Routing = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/quien_somos" element={<IdentityPage />} />
+        <Route path="/servicios/:serviceType" element={<ServicesPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
       </Routes>
     </>
   )
