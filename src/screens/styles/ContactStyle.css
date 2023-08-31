@@ -1,3 +1,13 @@
+.contentContacto{
+    margin: 15px;
+}
+
+.contacText{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contacTitle {
     font-size: 56px;
     font-weight: 800;
@@ -6,14 +16,36 @@
     color: #364d79;
 }
 
-.contentContacto{
-    margin: 15px;
-}
-
 
 .contacDescrip{
     text-align: justify;
     padding-left: 20%;
     padding-right: 20%;
     font-size: 26px;
+}
+
+
+.contact-points{
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-point-title{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+
+.contact-point-text{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.contact-form{   
+  display: flex;
+  justify-content: center;
 }
