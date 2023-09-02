@@ -1,0 +1,66 @@
+.carousel-turn-table-landing{
+    margin: auto;
+    width: 1840px;
+    justify-content: center;
+    align-self: center;
+    display: block;
+}
+
+
+.land-carousel-space-1{
+    background-image: url("../assets/Chihuahua2011.png");
+    background-size: cover;
+    width: 1840px;
+    height: 550px;
+}
+
+.image-content-carousel-1{
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-left: 15px;
+    text-align: left;
+}
+
+.image-header-carousel-1{
+    font-size: 55px;
+    font-weight: 800;
+    height: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.image-text-carousel-1{
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+
+.land-carousel-space-2{
+    background-image: url("../assets/Hermosillo2011.png");
+    background-size: cover;
+    width: 1840px;
+    height: 550px;
+}
+
+.image-content-carousel-2{
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-right: 15px;
+    margin-top: 400px;
+    text-align: right;
+}
+
+.image-header-carousel-2{
+    font-size: 55px;
+    font-weight: 800;
+    height: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.image-text-carousel-2{
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 2px;
+}

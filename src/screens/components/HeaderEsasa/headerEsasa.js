@@ -18,7 +18,7 @@ export default function HeaderEsasa() {
 
     return(
       <>
-        <Header style={{display:"flex", backgroundColor:"white"}}>
+        <Header style={{display:"flex", backgroundColor:"white", backgroundSize:"cover", lineHeight:"0"}}>
           <Menu 
               onClick={onClick} 
               selectedKeys={[current]} 

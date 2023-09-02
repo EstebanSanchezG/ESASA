@@ -1,23 +1,7 @@
 import React from 'react';
-import { Carousel } from 'antd';
-import IndustrialPhoto from '../assets/IndustrialEditSample.png';
-import ElectricalPhoto from "../assets/ElectricalEditSample.png";
+import { Carousel, Row, Col } from 'antd';
+import './LandingCarouselStyle.css';
 
-
-const contentStyle1 ={
-    height: "380px",
-    width: "100%",
-    lineHeight: "160px",
-    alignItems: "center",
-}
-
-const contentStyle ={
-    height: "380px",
-    color: "#fff",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-}
 const settingsCarousel={
     autoplay: true,
     dots: true
@@ -25,14 +9,22 @@ const settingsCarousel={
 export default function LandingCarousel(){
     return(
         <>
-            <Carousel {...settingsCarousel}>
-                <div>
-                    <img src={IndustrialPhoto} style={contentStyle1} alt='Industrial'/>
-                </div>
-                <div>
-                    <img src={ElectricalPhoto} style={contentStyle1} alt='Industrial'/>
-                </div>
-            </Carousel>
+            <div className='carousel-turn-table-landing'>
+                <Carousel {...settingsCarousel} >
+                    <div className='land-carousel-space-1'>
+                        <div className='image-content-carousel-1'>
+                        <p className='image-header-carousel-1'>Años de Calidad</p>
+                        <p className='image-text-carousel-1'>Contamos con más de 30 años de experiencia</p>
+                        </div>
+                    </div>
+                    <div className='land-carousel-space-2'>
+                        <div className='image-content-carousel-2'>
+                        <p className='image-header-carousel-2'>Energía Alterna</p>
+                        <p className='image-text-carousel-2'>Manejamos servicio de instalación de enregías renovables</p>
+                        </div>
+                    </div>
+                </Carousel>
+            </div>
         </>
     )
 }

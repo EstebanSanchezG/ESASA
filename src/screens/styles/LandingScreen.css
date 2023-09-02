@@ -1,0 +1,52 @@
+.landing-page-content {
+    margin: 8px;
+}
+
+.content-container-landing-page{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.landing-subheader{
+    font-size: 36px;
+    color: #364d79;
+    font-weight: 700;
+}
+
+
+.landing-subdescription{
+    
+    font-size: 26px; 
+}
+
+/* Background Photos */
+
+.expBackground {
+    background-image: url("../../assets/Experiencia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.expBackground {
+    background-image: url("../../assets/Experiencia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.misBackground {
+    background-image: url("../../assets/Mision.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.visBackground {
+    background-image: url("../../assets/Vision.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin-bottom: 5%;
+}
