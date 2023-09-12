@@ -60,8 +60,7 @@ export default function LandingPage(){
                     </Col>
                 </Row>
                 <Row className='busca-una-oportunidad'>
-                    <Col flex = "5" ></Col>
-                    <Col flex = "4">             
+                    <Col flex = "5" >
                         <div className = 'content-container-landing-page'>
                             <div className='landing-subheader'>
                                 EXPERIENCIA
@@ -75,6 +74,7 @@ export default function LandingPage(){
                             </div>
                         </div> 
                     </Col>
+                    <Col flex = "4" />
                 </Row>
             </div>
         </>
