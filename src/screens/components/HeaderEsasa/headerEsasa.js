@@ -1,53 +1,37 @@
-import React, { useState, setCurrent, current } from 'react';
+import React, { useState, useEffect, setCurrent, current } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import {Layout, Menu, MenuItemGroup} from 'antd';
 import {IdcardOutlined, MailOutlined, ToolOutlined ,TeamOutlined} from '@ant-design/icons';
 import Logo from '../assets/esasaLogo.png'
 import SubMenu from 'antd/es/menu/SubMenu';
 import "./headerStyle.css";
-import {ServiceList} from '../DescriptionPage/ServiceList';
-
-const data = ServiceList
-
+import axios from 'axios';
+import services from '../DescriptionPage/descripciones-de-servicios.json'
 const {Header} = Layout;
-
-
-function ServiceLinks(props) {
-  const { name, id } = props
-  return (
-    <>
-      <NavLink to={`/servicios/${id}`}>{name}</NavLink>
-    </>
-  )
-}
-
-function ServiceListing (){
-
-  const submenutitle = data.map(({ title, desc, id}, i) => {
-    return (
-      <ServiceLinks
-        id={i}
-        key={id}
-        name={title}
-        desc={desc}
-      />
-    )
-  })
-
-  return (
-    <>
-      { submenutitle }
-    </>
-  )
-}
-
-
 
 export default function HeaderEsasa() {
     
     const onClick = (e) => {
       setCurrent(e.key);
+      window.location.reload(true)
     }
+
+    const [serviceData, setServices] = useState(services);
+
+    // useEffect(() => {
+    //   const handleServiceList = () => {
+    //     const options = {
+    //       method: 'GET',
+    //       url: '/descripciones-de-servicios.json'
+    //     }
+    //   axios.request(options).then(function(response){
+    //     setServices(response.data);
+    //   }).catch(function(error){
+    //     console.error(error);
+    //   })
+    // }
+    //   handleServiceList();
+    // }, [])
 
     return(
       <>
@@ -69,9 +53,51 @@ export default function HeaderEsasa() {
                 </Menu.Item>
                 
             <SubMenu selectedKeys={[current]} title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
-                <Menu.Item>
-                  <ServiceListing key={0} />
+                {serviceData && 
+                serviceData.map(({ title, id} ) => (
+                    <Menu.Item>
+                      <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                    </Menu.Item>
+                ))
+                }
+                
+                {/* <Menu.Item key="DisIngEle">
+                  Diseño e Ingenieria Electromecánica
                 </Menu.Item>
+                <Menu.Item key="InsENH">
+                  Construcción de Instalaciones
+                  Eléctricas, Neumáticas e Hidráulicas
+                </Menu.Item>
+                <Menu.Item key="EnsaMaq">
+                  Ensamble de Máquinas
+                </Menu.Item>
+                <Menu.Item key="SubPote">
+                  Subestaciones de Potencia
+                </Menu.Item>
+                <Menu.Item key="TrataAgua">
+                  Sistemas de Tratamiento de Agua
+                </Menu.Item>
+                <Menu.Item key="LinSub">
+                  Líneas Subterráneas
+                </Menu.Item>
+                <Menu.Item key="ProcMaq">
+                  Procesos Internos de Maquiladora
+                </Menu.Item>
+                <Menu.Item key="ManteInd">
+                  Servicios de Mantenimiento Industrial
+                </Menu.Item>
+                <Menu.Item key="RigTP">
+                  Servicios de Rigging y Transferenciade Procesos
+                </Menu.Item>
+                <Menu.Item key="AhorroEner">
+                  Sistemas de Ahorro de Energía
+                </Menu.Item>
+                <Menu.Item key="InsSolar">
+                  Instalación de Paneles Solares
+                </Menu.Item>
+                <Menu.Item key="LlavMano">
+                  Proyectos Llave en Mano
+                </Menu.Item> */}
             </SubMenu>
             <Menu.Item key="Contacto">
               <a href = "/contacto">
