@@ -11,33 +11,29 @@ export default function LandingPage(){
         <>
             <HeaderEsasa />
             <LandingCarousel autoplay autoplaySpeed={4000} />
-            <div className='landing-page-content'>
-                <Row className='conoce-mas-nosotros'>            
-                    <div className = 'content-container-landing-page'>
+            <div className='landing-page-content'>            
+                    <div className = 'content-container-landing-page-principal'>
                         <div className='landing-subheader'>
-                            EXPERIENCIA
+                            TEXTO PRINCIPAL
                         </div>
                         <div class='landing-subdescription'>
-                        Más de 35 años atendiendo a las grandes empresas
-                        del sector industrial nacional e internacional colocan a
-                        Esteban Sánchez y Asociados como una de las
-                        empresas de Ingeniería Electromecánica más exitosas
-                        de México.  
+                        En este apartado, se colocará algún párrafo introductora a la 
+                        empresa. Puede ser alguna noticia grande, un mensaje de calidad,
+                        alguna frase, solo es algo que hará al negocio lucir bien. 
                         </div>
-                    </div> 
-                </Row>
+                    </div>
                 <Row className='conoce-compromiso-ambiental'>
-                    <Col flex = "4" ><div className = 'content-container-landing-page'>
+                    <Col flex = "4" >
+                        <div className = 'content-container-landing-page'>
                             <div className='landing-subheader'>
-                                EXPERIENCIA
+                                QUIENES SOMOS
                             </div>
                             <div class='landing-subdescription'>
-                            Más de 35 años atendiendo a las grandes empresas
-                            del sector industrial nacional e internacional colocan a
-                            Esteban Sánchez y Asociados como una de las
-                            empresas de Ingeniería Electromecánica más exitosas
-                            de México.  
+                            Más de 35 años atendiendo a las grandes empresas de México y EUA,
+                            enfrentando alos retos que marca la industria y aportando soluciones
+                            de alta calidad.  
                             </div>
+                            <Button type='primary' className='landing-page-redirect-button'>Conoce Más</Button>
                         </div>
                     </Col>
                     <Col flex = "5" />  
@@ -47,14 +43,11 @@ export default function LandingPage(){
                     <Col flex = "4">             
                         <div className = 'content-container-landing-page'>
                             <div className='landing-subheader'>
-                                EXPERIENCIA
+                                SERVICIOS DE TODO
                             </div>
                             <div class='landing-subdescription'>
-                            Más de 35 años atendiendo a las grandes empresas
-                            del sector industrial nacional e internacional colocan a
-                            Esteban Sánchez y Asociados como una de las
-                            empresas de Ingeniería Electromecánica más exitosas
-                            de México.  
+                            Conoce todos los servicios que ESASA ofrece. Aquí irá un 
+                            párrafo que hable sobre los tipos de servicios que se realizan en ESASA. 
                             </div>
                         </div> 
                     </Col>
@@ -63,14 +56,11 @@ export default function LandingPage(){
                     <Col flex = "5" >
                         <div className = 'content-container-landing-page'>
                             <div className='landing-subheader'>
-                                EXPERIENCIA
+                                ESTEMOS EN CONTACTO
                             </div>
                             <div class='landing-subdescription'>
-                            Más de 35 años atendiendo a las grandes empresas
-                            del sector industrial nacional e internacional colocan a
-                            Esteban Sánchez y Asociados como una de las
-                            empresas de Ingeniería Electromecánica más exitosas
-                            de México.  
+                            Un párrafo que invita al usuario a contactar a la empresa y
+                            poder cotizar un proyecto o realizar una consulta. 
                             </div>
                         </div> 
                     </Col>
