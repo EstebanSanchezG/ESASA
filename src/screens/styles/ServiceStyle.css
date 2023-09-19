@@ -1,9 +1,41 @@
+.service-header-container{
+    color: white;
+    background-color: #3470de;
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
 .service-title{
-    font-size: 36px;
-    color: #364d79;
+    font-size: 52px;
     font-weight: 700;
 }
 
 .service-description{
-    font-size: 26px;
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.service-offered-container{
+    align-self: center;
+    justify-content: center;
+}
+
+.service-individual-container{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.service-individual-title{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+  'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
 }

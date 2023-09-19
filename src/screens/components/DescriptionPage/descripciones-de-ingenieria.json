@@ -1,0 +1,40 @@
+[ 
+   { 
+     "id": "proyectos-electricos",
+     "title":"Poyectos Eléctricos de Alta, Media, y Baja Tensión",
+      "desc":"Instalación e ingeníeria de generadores, cableado, y más" ,
+      "imagenes" : ["Crane.png", "Mision.png"],
+      "servicios":[
+         "Líneas de Transmisión", 
+         "Líneas de Distribución Aéreas y Subterraneas",
+         "Alimentación de Equipos en Plantas Industriales"
+      ]
+   },
+   { 
+      "id": "ingenerias-proyectos-constructivos",
+      "title":"Integración de Ingenierías para Proyectos Constructivos",
+      "desc":"Integración de soluciones usando ingenería interna y servicios de nuestros socios comerciales" ,
+      "imagenes" :["Mision.png"],
+      "servicios":["Diseño Arquitectónico", 
+         "Terracerías" ,
+         "Diseño de Cimentaciones" ,
+         "Proyecto Estructural" ,
+         "Servicios Eléctricos" ,
+         "Proyecto HVAC" ,
+         "Proyecto Hidrosanitario" ,
+         "Proyecto Sistemas contra Incendios"
+      ]   
+   },
+   { 
+      "id": "ingenerias-integracion-procesos",
+      "title":"Desarrollo de Ingenerías para Integración de Procesos",
+      "desc":"Desarrollo de Integración de procesos",
+      "imagenes" :["Vision.png"],
+      "servicios":[
+         "Proyecto Eléctrico", 
+         "Proyecto Neumáticos",
+         "Sistema de Enfriamiento",
+         "Sistemas de Extración"
+      ]   
+   }
+]

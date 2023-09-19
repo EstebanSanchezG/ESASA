@@ -6,12 +6,12 @@ import Logo from '../assets/esasaLogo.png'
 import SubMenu from 'antd/es/menu/SubMenu';
 import "./headerStyle.css";
 import axios from 'axios';
-import services from '../DescriptionPage/descripciones-de-servicios.json'
+import ingenierias from '../DescriptionPage/descripciones-de-ingenieria.json'
 const {Header} = Layout;
 
 export default function HeaderEsasa() {
 
-    const [serviceData, setServices] = useState(services);
+    const [ingenieriasData, setIngenierias] = useState(ingenierias);
 
     return(
       <>
@@ -30,9 +30,49 @@ export default function HeaderEsasa() {
                 </a>
                 </Menu.Item>
                 
-            <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
-                {serviceData && 
-                serviceData.map(({ title, id} ) => (
+            <SubMenu title={<span><ToolOutlined/>  Ingeniería</span>} >
+                {ingenieriasData && 
+                ingenieriasData.map(({ title, id} ) => (
+                    <Menu.Item>
+                      <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                    </Menu.Item>
+                ))
+                }
+            </SubMenu>
+
+            <SubMenu title={<span><ToolOutlined/>  Construcción</span>} >
+                {ingenieriasData && 
+                ingenieriasData.map(({ title, id} ) => (
+                    <Menu.Item>
+                      <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                    </Menu.Item>
+                ))
+                }
+            </SubMenu>
+
+            <SubMenu title={<span><ToolOutlined/>  Instalación</span>} >
+                {ingenieriasData && 
+                ingenieriasData.map(({ title, id} ) => (
+                    <Menu.Item>
+                      <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                    </Menu.Item>
+                ))
+                }
+            </SubMenu>
+            
+            <SubMenu title={<span><ToolOutlined/>  Mantenimiento</span>} >
+                {ingenieriasData && 
+                ingenieriasData.map(({ title, id} ) => (
+                    <Menu.Item>
+                      <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                    </Menu.Item>
+                ))
+                }
+            </SubMenu>
+
+            <SubMenu title={<span><ToolOutlined/>  Estudios</span>} >
+                {ingenieriasData && 
+                ingenieriasData.map(({ title, id} ) => (
                     <Menu.Item>
                       <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
                     </Menu.Item>
