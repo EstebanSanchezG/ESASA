@@ -1,9 +1,113 @@
+
+.service-header-container{
+    color:white;
+    background-color:#348fde;
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+    margin-bottom: 10%;
+    width: auto;
+}
+
 .service-title{
-    font-size: 36px;
-    color: #364d79;
+    font-size: 52px;
     font-weight: 700;
 }
 
 .service-description{
-    font-size: 26px;
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+
+.client-individual-container{
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif,
+    Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji'
+}
+
+.individual-client-title{   
+    font-size: 36px;
+    font-weight: 700;
+    color: #348fde;
+}
+.individual-client-description{
+    text-align: left;
+    font-weight: 400;
+    font-size: 21px;
+    color:#464646;
+}
+
+.photo-individual-container{
+    margin-top: 55px;
+}
+
+.individual-photo{
+    height: 360px;
+    width: 600px;
+
+}
+
+.individual-photo-description{
+    font-size: 24px;
+    font-weight: 500;
+    color:#464646;
+}
+
+@media (max-width: 640px){
+    .service-content{
+        width: 99%; 
+    }
+
+    .client-list-container{
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: repeat(1);
+        vertical-align: top;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo-group-container{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 640px){
+    .client-list-container{
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        gap: 10px 80px;
+        vertical-align: top;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo-group-container{
+        display: grid;
+        grid-template-columns: repeat(2, 600px);
+        gap: 10px 80px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif,
+    Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji'
 }

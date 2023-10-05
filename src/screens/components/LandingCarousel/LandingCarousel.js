@@ -14,7 +14,7 @@ export default function LandingCarousel(){
                     <div className='land-carousel-space-1'>
                         <div className='image-content-carousel-1'>
                         <p className='image-header-carousel-1'>Años de Calidad</p>
-                        <p className='image-text-carousel-1'>Contamos con más de 30 años de experiencia</p>
+                        <p className='image-text-carousel-1'>Contamos con más de 40 años de experiencia</p>
                         </div>
                     </div>
                     <div className='land-carousel-space-2'>

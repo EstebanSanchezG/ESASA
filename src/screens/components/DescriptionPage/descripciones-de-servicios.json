@@ -1,122 +1,297 @@
 [
-    { 
-     "id": "diseno-ingenieria-electrromecanica",
-     "title":"Diseño e Ingenieria Electromecánica",
-      "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-      "imagen" : "Crane.png",
-      "lista":{
-         "listado_1":"cliente 1" , 
-         "listado_2": "cliente 2"
-     } 
+     { 
+      "id": "ensamble-maquinas",
+      "title":"Ensamble de Máquinaria",
+      "desc":"" ,
+      "imagenes" : ["ensamble-maquina/ensamble-maquina-cananea-1996.png"],
+      "imagenes_descrip": ["Cananea, Sonora 1996"],
+      "clientes":[
+         "MINERA DE\nCANANEA" , 
+         "MEXICANA DE\nCOBRE SA DE CV"
+      ],
+      "clientes_desc":[
+         "- Cananea, Sonora \n- Armado de Rotaría Bucyrus-Erie\n  de 14 y 1/4 \n- Armado de pala Bucyrus-Erie 54\n   yd cúbicas \n- Armado de Camiones de 350 ton.",
+         "- Nacozari, Sonora \n- Armado de Rotaría Bucyrus-Erie\n de 14 y 1/4 \n- Armado de pala Bucyrus"
+      ]  
      },
      { 
-        "id": "construccion-instalacion-electricas-neumaticas-hidraulicas",
-        "title":"Construccion de Instalaciones Electircas, Neumaticas e Hidraulicas",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Mision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "subestaciones-potencia",
+      "title":"Subestaciones de Potencia",
+      "desc":"" ,
+      "imagenes" : ["subestaciones-potencias/hermosillo-son-2011.png", "subestaciones-potencias/nogales-sonora-2001.png"],
+      "imagenes_descrip": ["Hermosillo, Sonora 2011", "Nogales, Sonora 2001"],
+      "clientes":[
+         "ACCO" , 
+         "HOLCIM APASCO"
+      ],
+      "clientes_desc":[
+         "- Nogales, Sonora \n- 18-24-30 MVA \n- 115KV",
+         "- 40 MVA \n- 115 KV"
+      ]   
      },
      { 
-        "id": "ensamble-maquinas",
-        "title":"Ensamble de Máquinas",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Vision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "sistemas-tratamiento-agua",
+      "title":"Sistemas de Tratamiento de Agua",
+      "desc":"" ,
+      "imagenes" : ["sistemas-tratamiento-agua/chihuahua-2010.png"],
+      "imagenes_descrip": [
+         "Chihuahua, Chihuahua 2010"
+      ],
+      "clientes":[
+         "VEOLIA WATER\nSYSTEMS" , 
+         "COCA COLA"
+      ],
+      "clientes_desc":[
+         "- Cd. Juárez, Chihuahua \n- Chihuahua, Chihuahua \n- Cd. de México" ,
+         "- Hermosillo, Sonora"
+      ]    
      },
      { 
-        "id": "subestaciones-potencia",
-        "title":"Subestaciones de Potencia",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Experiencia.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "lineas-subterraneas",
+      "title":"Líneas Subterráneas",
+      "desc":"" ,
+      "imagenes" : ["lineas-subterraneas/hermosillo-sonora-2014.png"],
+      "imagenes_descrip": [
+         "Hermosillo, Sonora 2014"
+      ],
+      "clientes":[
+         "FUNDACIÓN\nESPOSOS\nRODRÍGUEZ" , 
+         "AMP AMERMEX\nSA DE CV", 
+         "FRIGORÍFICO\nAGROPECUARIO\nSONORENSE"
+      ],
+      "clientes_desc":[
+         "- Hermosillo, Sonora", 
+         "- Hermosillo, Sonora", 
+         "- Hermosillo, Sonora"
+      ]   
+     },
+     {
+      "id": "industria-alimenticia",
+      "title": "Industria Alimenticia",
+      "desc":"",
+      "imagenes" : [
+         "industria-alimenticia/guadalajara-jalisco-2008.png",
+         "industria-alimenticia/servi-industrias.png"
+      ],
+      "imagenes_descrip": [
+         "Guadalajara, Jalisco 2008", "Servi-Industrias del Noroeste SA de CV"
+      ],
+      "clientes":[
+         "BACHOCO", 
+         "SERVI-INDUSTRIAS\nDEL NOROESTE SA\nDE CV",
+         "NORSON", "PACÍFICO\nINDUSTRIAL SA\nDE CV",
+         "FRIGOFRUVER SA\nDE CV", "SERVI-INDUSTRIAS\nDEL NOROESTE SA\nDE CV",
+         "COMERCIALIZADORA\nDE FRUTAS FINAS\nTARAHUMARAS SA\nDE CV"
+      ],
+      "clientes_desc":[
+         "- Hermosillo, Sonora",
+         "- México D.F.\n- Guadalajara, Jalisco\n- Mazatlán, Sinaloa",
+         "- Hermosillo, Sonora", "- Yávaros, Sonora",
+         "- Hermosillo, Sonora", "- Hermosillo, Sonora",
+         "- Guadalajara, Jalisco"
+      ]   
      },
      { 
-        "id": "sistemas-tratamiento-agua",
-        "title":"Sistemas de Tratamiento de Agua",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Mision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "procesos-internos-maquiladora",
+      "title":"Procesos Internos de Maquiladora",
+      "desc":"Diseño, Ingenería, Construcción de Instalaciones Eléctricas, Neumáticas e Hidráulicas de Maquinaria Diversa." ,
+      "imagenes" : [
+         "procesos-internos-maquiladora/guaymas-sonora-2000.png",
+         "procesos-internos-maquiladora/nogales-sonora-2008.png",
+         "procesos-internos-maquiladora/hermosillo-sonora-2007.png"
+      ],
+      "imagenes_descrip": [
+         "Guaymas, Sonora 2000",
+         "Nogales, Sonora 2008",
+         "Hermosillo, Sonora 2007"
+      ],
+      "clientes":[
+         "HERMOSILLO,\nSONORA",
+         "NOGALES,\nSONORA",
+         "AGUA PRIETA,\nSONORA",
+         "EMPALME,\nSONORA",
+         "CELAYA,\nGUANAJUATO",
+         "SAN JUAN DEL\nRÍO, QUERÉTARO",
+         "GUAYMAS,\nSONORA", "QUERÉTARO,\nQUERÉTARO",
+         "SILAO,\nGUANAJUATO"
+      ],
+      "clientes_desc":[
+         "- Flex N Gates\n- Martinrea Automotive\n  Structures\n- Victor Eqipment de México\n- Metokote de México\n- Thermadime\n- AMP Amermex\n- Faurecia Exhaust Mexicana\n- IACNA México\n- Graphito Mexicanos de Asbuty\n- Leoni Wring Systems Mexicana\n- Sonora Forming\n- Flextronics Manufacturing Mex\n- Porcelanite\n- Zobele",
+         "- ICT de México\n- Master Lock de Nogales\n- Waterloo de Nogales\n- Avent Planta 1 y 3\n- Deringer Ney\n- ITT Cannon\n- Alcatel Lucent Technologies\n- Sonitronies\n- Deaborn HL\n- Weiser Lock de México\n- Andercraft de México\n- ACCO Development\n- Continental Automotive\n  Mexicana\n- Amphenol Optimize México\n- Flextronics Manufacturing\n- Becton Dickinson ITSI\n- Pencom CSS de México\n- Walbro de México\n- Porcelanite\n- Javid de México\n- Cadence\n- WATTS",
+         "- Velcromex",
+         "- Costuras del Mar\n- Kimberly Klark",
+         "- Sanko Gosei S.A. de C.V.",
+         "- Topre Autoparts México\n   Services S.A. de C.V.",
+         "- Alfa Lava Flow", "- Argent",
+         "- Martinrea Developments de\n  México\n- Mitsuba de México S.A.\n  de C.V."
+      ]   
      },
      { 
-        "id": "lineas-subteerraneas",
-        "title":"Líneas Subterráneas",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Vision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "pruebas-mantenimiento-industrial",
+      "title":"Pruebas de Mantenimiento Industrial",
+      "desc":"" ,
+      "imagenes" : [
+         "servicios-mantenimiento-industrial/pruebas-mantenimiento-industrial-1.png",
+         "servicios-mantenimiento-industrial/pruebas-mantenimiento-industrial-2.png"
+      ],
+      "imagenes_descrip": [
+
+      ],
+      "clientes":[
+         "TTR RELACIÓN DE\nTRANSFORMACIÓN",
+         "MEGGER RESISTENCIA\nDE AISLAMIENTO",
+         "TERMOGRAFÍAS",
+         "ANÁLISIS DE ENERGÍA",
+         "MEDICIÓN DE PUESTA\nA TIERRA" 
+      ],
+      "clientes_desc":[
+         "Aplicación en transformadores para\nver la relación de transformación\n(Número de vueltas de las bobinas por\nTAP) Tap Punto de conexión de cada\nbobina para seleccionar el voltaje que\nrequiere un transformador.",
+         "Aplicación en transformadores, apartarrayos,\ncables,interruptores, aisladores, motores,\netc. con el objetivo de medir la resistencia de\naislamiento entre fases, fases contra tierra,\nentre bobinas, bobinas contra tierra.",
+         "Aplicación en equipos, tableros,\nmotores, instalaciones eléctricas con el\nobjetivo de localizar defectos en\ninstalaciones eléctricas tales como,\npuntos calientes por falsos contactos o\nconexiones flojas, sobrecarga en\ntableros o cables, interruptores con\ndaño por calentamiento en contactos\ninternos.",
+         "Medir consumos de energía KWH, KW, KVA,\namperaje, voltaje, factor de potencia,\narmónicos.",
+         "Mediciones de tierras de subestaciones,\nsite, cuartos de químicos y residuos\npeligrosos, pararrayos, tableros, estructuras\nde plantas, entre otras instalaciones."
+      ]
+     },
+     {
+      "id": "servicios-mantenimiento-industrial",
+      "title":"Servicios de Mantenimiento Industrial",
+      "desc":"" ,
+      "imagenes" : [
+         "servicios-mantenimiento-industrial/mantenimiento-industrial-1.png",
+         "servicios-mantenimiento-industrial/mantenimiento-industrial-2.png"
+      ],
+      "imagenes_descrip": [
+
+      ],
+      "clientes":[
+         "IMPRESORA Y\nEDITORIAL SA DE CV", 
+         "MASTERLOCK", 
+         "AVENT MAGDALENA",
+         "VELCROMEX SA\nDE CV", "AVENT NOGALES", "AMP AMERMEX", "WATERLOO DE\nNOGALES SA DE CV",
+         "DEARBORN HL\nDE S DE RL DE CV", "ALCATEL LUCENT\nDE NOGALES SA", "TEGRANT DE\nMÉXICO SA DE CV",
+         "MARTINREA\nAUTOMOTIVE\nSTRUCTURES"
+      ],
+      "clientes_desc":[
+         "- Hermosillo, Sonora \n- Instalación de Planta de Emergencia \n  de 459 KW",
+         "- Nogales, Sonora \n- Instalación Planta de Emergencia \n  de 1000 KW",
+         "- Magdalena, Sonora \n- Instalación Plamta de Emergencia \n   de 750 KW",
+         "- Aguaprieta, Sonora", "- Nogales, Sonora", "- Hermosillo, Sonora", "- Nogales, Sonora",
+         "- Nogales, Sonora", "- Nogales, Sonora", "- Tijuana, Baja California",
+         "- Hermosillo, Sonora"
+      ]
      },
      { 
-        "id": "procesos-internos-maquiladora",
-        "title":"Procesos Internos de Maquiladora",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Experiencia.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "servicios-rigging-transferencia-procesos",
+      "title":"Servicios de Rigging y Transferencia de Procesos",
+      "desc":"" ,
+      "imagenes" : [
+         "servicios-rigging-transferencias-procesos/nogales-sonora-2012.png",
+         "servicios-rigging-transferencias-procesos/kansas-city-2014.png"
+      ],
+      "imagenes_descrip": [
+         "Nogales, Sonora 2012", "Kansas City 2014" 
+      ],
+      "clientes":[
+         "DERINGER NEY", "COLLIN AND IRKMAN", "DAIRO NISHIKAWA", 
+         "ITT CANNON",
+         "ALFA NAVAL", "WATTS WATER TECHNOLOGIES", "ZOBELE MÉXICO",
+         "SONOCO"
+      ],
+      "clientes_desc":[
+         "- Nogales - Nogales", "- New Hampshire - Hermosillo", "- Salamanca - Querétaro",
+         "- Nogales - Nogales \n- Los Ángeles - Nogales",
+         "- Chicago - Guaymas", "- Kansas City - Nogales", "- Hermosillo - Hermosillo",
+         "- Nogales - Tijuana \n- Los Ángeles - Nogales"
+      ] 
+     },    
+     { 
+      "id": "energia-alternas",
+      "title":"Energías Alternas",
+      "desc":"Sistemas de Ahorro de Energía e Instalación de Paneles Solares" ,
+      "imagenes" : [
+         "energias-alternas/Hermosillo_Sonora_2012",
+         "energias-alternas/Nogales-Sonora-2010"
+      ],
+      "imagenes_descrip": [
+         "Hermosillo, Sonora 2012", "Nogales, Sonora 2010"
+      ],
+      "clientes":[
+         "FORD", 
+         "MASTERLOCK", "WATERLOO", "AVENT PLANTA 1 Y 3", "AVENT MAGDALENA",
+         "CISCO", "EL IMPARCIAL"
+      ],
+      "clientes_desc":[
+         "- Hermosillo, Sonora \n- Reemplazo 1600 Luminarias", 
+         "- Nogales, Sonora", "- Nogales, Sonora", "- Nogales, Sonora", "- Empalme, Sonora",
+         "- Las Vegas, Nevada", "- Hermosillo, Sonora"
+      ]    
      },
      { 
-        "id": "servicios-mantenimiento-industrial",
-        "title":"Servicios de Mantenimiento Industrial",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Mision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "sector-comercial",
+      "title":"Sector Comercial",
+      "desc":"Hoteles y Plazas Comerciales" ,
+      "imagenes" : [
+         "sector-comercial/renault-hermosillo-sonora-2012.png"      
+      ],
+      "imagenes_descrip": [
+          "Hermosillo, Sonora 2012"
+      ],
+      "clientes":[
+         "ASHLEY HOME\nFURNITURE", "BED BATH AND\nBEYOND",
+         "STARBUCKS", "RENAULT", "PLAZA TERSA", 
+         "HOTEL EL\nDORADO"
+      ],
+      "clientes_desc":[
+         "- Hermosillo, Sonora", "- Cd. de México", 
+         "- Hermosillo, Sonora", "- Hermosillo, Sonora", "- Hermosillo, Sonora",
+         "- Hermosillo, Sonora"
+      ] 
      },
      { 
-        "id": "servicios-rigging-transferencia-procesos",
-        "title":"Servicios de Rigging y Transferencia de Procesos",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Vision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
+      "id": "sector-educativo",
+      "title":"Sector Educativo",
+      "desc":"Edificios, Aulas, Laboratorios, e Instalaciones Deportivas",
+      "imagenes" : [
+         "sector-educativo/ITESM-Irapuato.png",
+         "sector-educativo/ITESM-Hermosillo.png"
+      ],
+      "imagenes_descrip": [
+          "ITESM Irapuato", "ITESM Hermosillo"
+      ],
+      "clientes":[
+         "ITESM CAMPUS\nSONORA NORTE", 
+         "TECMILENIO CAMPUS\nHERMOSILLO", "TECMILENIO CAMPUS\nCD.OBREGÓN",
+         "ITESM CAMPUS LEÓN", 
+         "ITESM CAMPUS\nCULIACÁN", 
+         "ITESM CAMPUS\nIRAPUATO",
+         "HIGH POINT\nINTERNATIONAL\nSCHOOL"
+      ],
+      "clientes_desc":[
+         "- Hermosillo, Sonora\n- 2 Subestaciones de 225 KVA\n- 1993 - 1000 KVA Biblioteca\n- Aulas Edificio IV\n- Salón de Congresos\n- Cafetería",
+         "- Hermosillo, Sonora", "- Cd. Obregón, Sonora",
+         "- León, Guanajuato\n- Edificio Profesional\n- Parque Tecnológico",
+         "- Culiacán, Sinaloa\n- Parque Tecnológico", 
+         "- Irapuato, Guanajuato\n- Parque Tecnológico",
+         "- Hermosillo, Sonora\n- Línea de Media Tensión\n- Subestación\n- Transformadores\n- Instalación Eléctrica de Edificio"
+      ] 
      },
      { 
-        "id": "sistemas-ahorro-energia",
-        "title":"Sistemas de Ahorro de Energía",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Experiencia.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
-     },
-     { 
-        "id": "instalacion-paneles-solares",
-        "title":"Instalación de Paneles Solares",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Mision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
-     },
-     { 
-        "id": "prroyectos-llave-mano",
-        "title":"Proyectos Llave en Mano",
-         "desc":"Soy otra descripcion de lo que quieras que diga aqui." ,
-         "imagen" :"Vision.png",
-         "lista":{
-            "listado_1":"cliente 1 " , 
-            "listado_2": "cliente 2 "
-        }   
-     } 
+      "id": "sector-gobierno",
+      "title":"Sector Gobierno",
+      "desc":"Alumbrado Público, Verificación de Instalaciones Eléctricas, entre otros",
+      "imagenes" : [
+         "sector-gobierno/alumbrado-publico.png",
+         "sector-gobierno/alumbrado-publico-2.png"
+      ],
+      "imagenes_descrip": [
+          "Alumbrado Público", "Alumbrado Público"
+      ],
+      "clientes":[
+         "MUNICIPIO DEL SÁRIC", 
+         "GUARDERÍA CAMINITO FELIZ" 
+      ],
+      "clientes_desc":[
+         "- Alumbrado Público", "- Reingeniería de Instalaciones Eléctricas"
+      ] 
+     }
 ]

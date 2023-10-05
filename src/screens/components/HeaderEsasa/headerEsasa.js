@@ -1,59 +1,113 @@
 import React, { useState} from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import {Layout, Menu, MenuItemGroup} from 'antd';
-import {IdcardOutlined, MailOutlined, ToolOutlined ,TeamOutlined} from '@ant-design/icons';
-import Logo from '../assets/esasaLogo.png'
+import {Link, NavLink} from 'react-router-dom';
+import {Layout, Menu, Button, Drawer} from 'antd';
+import {MenuOutlined, IdcardOutlined, MailOutlined, ToolOutlined ,TeamOutlined} from '@ant-design/icons';
+import Logo from '../assets/esasaLogo.svg'
 import SubMenu from 'antd/es/menu/SubMenu';
 import "./headerStyle.css";
 import axios from 'axios';
 import services from '../DescriptionPage/descripciones-de-servicios.json'
-const {Header} = Layout;
+const {Header, Sider} = Layout;
 
 export default function HeaderEsasa() {
 
-    const [serviceData, setServices] = useState(services);
+  const [serviceData, setServices] = useState(services);
+  const [open, setOpen] = useState(false);
+  const [childrenDrawer, setChildrenDrawer] = useState(false);
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+  const showChildrenDrawer = () => {
+    setChildrenDrawer(true);
+  };
+  const onChildrenDrawerClose = () => {
+    setChildrenDrawer(false);
+  };
 
-    return(
-      <>
-        <Header style={{display:"flex", backgroundColor:"white", backgroundSize:"cover", lineHeight:"0"}}>
-          <Menu
-              mode='horizontal' 
-              style={{lineHeight:"70px", fontSize:"18px", color:"gray", display:"flex"}}
-              >
+  return(
+    <>
+      <Header className='header-environment'>
+        <div className='top-menu-header-container'>
+          <nav className='big-screen-menu'>
             <Link to= '/'>
                 <img className="logo-icon" src={Logo} 
                 alt="ESASA Logo" style={{width:"100px", height:"auto"}}/>
             </Link>
-              <Menu.Item key="Identidad">
-                <a href='/quien_somos'>
-                  <IdcardOutlined/>  Quienes Somos
-                </a>
+            <Menu mode='horizontal' className='top-menu-header'>
+              <div className='menu-text-options'>
+                <Menu.Item key="Identidad">
+                  <a href='/quien_somos'>
+                    <IdcardOutlined/>  Quienes Somos
+                  </a>
                 </Menu.Item>
-                
-            <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
-                {serviceData && 
-                serviceData.map(({ title, id} ) => (
-                    <Menu.Item>
-                      <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
-                    </Menu.Item>
-                ))
-                }
-            </SubMenu>
+                  
+                <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
+                    {serviceData && serviceData.map(({ title, id} ) => (
+                        <Menu.Item>
+                          <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                        </Menu.Item>
+                    ))}
+                </SubMenu>
 
-            <Menu.Item key="Contacto">
-              <a href = "/contacto">
-                <MailOutlined/>
-                <span>Contáctenos</span>
-              </a>
-            </Menu.Item>
-            
-            <Menu.Item key="Trabajo">
-              <TeamOutlined/>
-              <span>Oportunidades de Empleo</span>
-            </Menu.Item>
-          </Menu>
-        </Header>
-      </>
-    )
+                <Menu.Item key="Contacto">
+                  <a href = "/contacto">
+                    <MailOutlined/>
+                    <span>Contáctenos</span>
+                  </a>
+                </Menu.Item>
+              </div>
+
+            </Menu>
+          </nav>
+        </div>
+
+        <div className='small-screen-menu-container'>
+          <nav className='navi-side-bar'>
+            <Button className="menu-open-drawer-button" style={{background:"#348fde"}} type="primary" icon={<MenuOutlined />} onClick={showDrawer}/>
+            <Drawer className="side-menu-header" title="Menú" 
+            placement="left" onClose={onClose} open={open}> 
+              <div className='side-menu-text-option'>  
+                <p>
+                  <a href='/quien_somos'>
+                    <IdcardOutlined/>  Quienes Somos
+                  </a>
+                </p>
+                <p>
+                  <a onClick={showChildrenDrawer}>
+                    <ToolOutlined/>  Nuestros Servicios
+                  </a>
+                  <Drawer title="Nuestros Servicios" width={320} placement='left'
+                  onClose={onChildrenDrawerClose} open={childrenDrawer}>
+                    {serviceData && serviceData.map(({ title, id} ) => (
+                        <p>
+                          <a>
+                          <NavLink style={{color:"grey"}} reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                          </a>
+                        </p>
+                    ))}
+                  </Drawer>
+                </p>
+                <p>
+                  <a href = "/contacto">
+                    <MailOutlined/>
+                    <span> Contáctenos</span>
+                  </a>
+                  </p>
+              </div>
+            </Drawer>
+            <Link to= '/'>
+                <img className="logo-icon" src={Logo} 
+                alt="ESASA Logo" style={{width:"100px", height:"auto"}}/>
+            </Link>
+          </nav>
+        </div>
+
+      </Header>
+      <body></body>
+    </>
+  )
 };
 

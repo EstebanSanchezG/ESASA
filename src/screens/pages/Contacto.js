@@ -18,6 +18,8 @@ export default function ContactPage(){
         return(
         <>
             <HeaderEsasa />
+            <body>
+            <div className='page--custom--body'>
             <div className='contentContacto'>
                 <Row style={StyleContact}>
                     <div className='contacText'>
@@ -96,6 +98,8 @@ export default function ContactPage(){
                 </div>
                 <OfficeLocationHMO></OfficeLocationHMO>
             </div>
+            </div>
+            </body>
         </>
     )
 }

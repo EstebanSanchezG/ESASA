@@ -10,63 +10,77 @@ export default function LandingPage(){
     return(
         <>
             <HeaderEsasa />
-            <LandingCarousel autoplay autoplaySpeed={4000} />
-            <div className='landing-page-content'>            
-                    <div className = 'content-container-landing-page-principal'>
-                        <div className='landing-subheader'>
-                            TEXTO PRINCIPAL
-                        </div>
-                        <div class='landing-subdescription'>
-                        En este apartado, se colocará algún párrafo introductora a la 
-                        empresa. Puede ser alguna noticia grande, un mensaje de calidad,
-                        alguna frase, solo es algo que hará al negocio lucir bien. 
-                        </div>
-                    </div>
-                <Row className='conoce-compromiso-ambiental'>
-                    <Col flex = "4" >
-                        <div className = 'content-container-landing-page'>
+            <body>
+            <div className='page--custom--body'>
+                <LandingCarousel autoplay autoplaySpeed={4000} />
+                <div className='landing-page-content'> 
+                    <Row className='conoce-clientes-calidad-row'>           
+                        <div className = 'content-container-landing-page-principal'>
                             <div className='landing-subheader'>
-                                QUIENES SOMOS
+                                AÑOS DE CALIDAD DETRÁS DE CADA PROYECTO
                             </div>
                             <div class='landing-subdescription'>
-                            Más de 35 años atendiendo a las grandes empresas de México y EUA,
-                            enfrentando alos retos que marca la industria y aportando soluciones
-                            de alta calidad.  
+                            En Esteban Sánchez y Asociados, nos defininmos no por lo que no hacemos,
+                            pero por lo que podemos hacer a usted. Hemos cultivado una red de clientes
+                            que confian en nosotros para cualquiera necesidad. Aprené más sobre 
+                            nuestros clientes.
                             </div>
-                            <Button type='primary' className='landing-page-redirect-button'>Conoce Más</Button>
+                            <Button type='primary' style={{background:"#348fde"}}
+                                className='landing-page-redirect-button'>Conoce Más</Button>
                         </div>
-                    </Col>
-                    <Col flex = "5" />  
-                </Row>
-                <Row className='cotiza-un-servicio'>
-                    <Col flex = "5" ></Col>
-                    <Col flex = "4">             
-                        <div className = 'content-container-landing-page'>
-                            <div className='landing-subheader'>
-                                SERVICIOS DE TODO
+                    </Row>
+                    <Row className='conoce-quien-somos-row'>
+                        <Col flex = "5" >
+                            <div className = 'content-container-landing-page'>
+                                <div className='landing-subheader'>
+                                    QUIENES SOMOS
+                                </div>
+                                <div class='landing-subdescription'>
+                                Llevamos 44 años atendiendo a las grandes empresas de México y EUA,
+                                enfrentando alos retos que marca la industria y aportando soluciones
+                                de alta calidad.  
+                                </div>
+                                <Button type='primary' style={{background:"#348fde"}}
+                                className='landing-page-redirect-button'>Conoce Más</Button>
                             </div>
-                            <div class='landing-subdescription'>
-                            Conoce todos los servicios que ESASA ofrece. Aquí irá un 
-                            párrafo que hable sobre los tipos de servicios que se realizan en ESASA. 
-                            </div>
-                        </div> 
-                    </Col>
-                </Row>
-                <Row className='busca-una-oportunidad'>
-                    <Col flex = "5" >
-                        <div className = 'content-container-landing-page'>
-                            <div className='landing-subheader'>
-                                ESTEMOS EN CONTACTO
-                            </div>
-                            <div class='landing-subdescription'>
-                            Un párrafo que invita al usuario a contactar a la empresa y
-                            poder cotizar un proyecto o realizar una consulta. 
-                            </div>
-                        </div> 
-                    </Col>
-                    <Col flex = "4" />
-                </Row>
+                        </Col>
+                        <Col flex = "4" />  
+                    </Row>
+                    <Row className='cotiza-un-servicio'>
+                        <Col flex = "4" ></Col>
+                        <Col flex = "5">             
+                            <div className = 'content-container-landing-page'>
+                                <div className='landing-subheader'>
+                                    SERVICIOS DE TODO
+                                </div>
+                                <div class='landing-subdescription'>
+                                Conoce todos los servicios que ESASA ofrece. Aquí irá un 
+                                párrafo que hable sobre los tipos de servicios que se realizan en ESASA. 
+                                </div>
+                                <Button type='primary' style={{background:"#348fde"}}
+                                className='landing-page-redirect-button'>Descubre Servicios</Button>
+                            </div> 
+                        </Col>
+                    </Row>
+                    <Row className='busca-una-oportunidad'>
+                        <Col flex = "5" >
+                            <div className = 'content-container-landing-page'>
+                                <div className='landing-subheader'>
+                                    ESTEMOS EN CONTACTO
+                                </div>
+                                <div class='landing-subdescription'>
+                                Un párrafo que invita al usuario a contactar a la empresa y
+                                poder cotizar un proyecto o realizar una consulta. 
+                                </div>
+                                <Button type='primary' style={{background:"#348fde"}}
+                                className='landing-page-redirect-button'>Solicítanos</Button>
+                            </div> 
+                        </Col>
+                        <Col flex = "4" />
+                    </Row>
+                </div>
             </div>
+            </body>
         </>
     )
 }

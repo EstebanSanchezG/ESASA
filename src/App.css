@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+body{
+  background-color: rgba(239, 239, 239, 1);
+}
+
+header{
+  background-color: white;
+  border: white;
+  border-width: 15px;
+}
+
+.page--custom--body{
+  max-width: 1440px;
+  justify-content: center;
+  margin: auto !important; 
+  float: none !important;
+  margin: 0px;
+  
+}

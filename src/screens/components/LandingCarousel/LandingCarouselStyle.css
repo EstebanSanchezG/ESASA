@@ -1,6 +1,6 @@
 .carousel-turn-table-landing{
-    margin: auto;
-    width: 1840px;
+    margin: 0px;
+    width: auto;
     justify-content: center;
     align-self: center;
     display: block;
@@ -10,7 +10,7 @@
 .land-carousel-space-1{
     background-image: url("../assets/Chihuahua2011.png");
     background-size: cover;
-    width: 1840px;
+    width: auto;
     height: 550px;
 }
 
@@ -39,7 +39,7 @@
 .land-carousel-space-2{
     background-image: url("../assets/Hermosillo2011.png");
     background-size: cover;
-    width: 1840px;
+    width: auto;
     height: 550px;
 }
 

@@ -1,3 +1,22 @@
+.content-container-landing-page{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+/* -----------First Row ------------ */
+
+.conoce-clientes-calidad-row{
+    margin-top: 15px;
+    background-image: url("../../assets/calidad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
 .content-container-landing-page-principal{
     padding-top: 20%;
     padding-bottom: 20%;
@@ -6,19 +25,11 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     max-width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-  'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-  'Noto Color Emoji';
+    
 }
 
-.content-container-landing-page{
-    padding-top: 20%;
-    padding-bottom: 20%;
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-}
+
+/* -------General Styles -------- */
 
 .landing-subheader{
     font-size: 36px;
@@ -35,17 +46,11 @@
 
 /* Background Photos */
 
-.expBackground {
-    background-image: url("../../assets/Experiencia.png");
+.conoce-quien-somos-row {
+    background-image: url("../../assets/conocenos.png");
+    background-position: 0px -200px;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 5%;
-}
-
-.expBackground {
-    background-image: url("../../assets/Experiencia.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     margin-bottom: 5%;
 }
 
@@ -67,4 +72,10 @@
     margin-top: 5%;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+  'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
 }
