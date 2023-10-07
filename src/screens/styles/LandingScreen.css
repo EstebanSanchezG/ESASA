@@ -14,7 +14,7 @@
     background-image: url("../../assets/calidad.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .content-container-landing-page-principal{
@@ -51,21 +51,22 @@
     background-position: 0px -200px;
     background-repeat: no-repeat;
     background-size:cover;
-    margin-bottom: 5%;
+    margin-bottom: 25px;
 }
 
-.misBackground {
-    background-image: url("../../assets/Mision.png");
+.observa-servicio-row {
+    background-image: url("../../assets/servicios.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 5%;
+    margin-bottom: 25px;
 }
 
-.visBackground {
-    background-image: url("../../assets/Vision.png");
+.contacto-a-nosotros-row {
+    background-image: url("../../assets/contactanos.png");
+    background-position: 0px -150px;
     background-repeat: no-repeat;
     background-size: cover;  
-    margin-bottom: 5%;
+    margin-bottom: 25px;
 }
 
 .landing-page-redirect-button{

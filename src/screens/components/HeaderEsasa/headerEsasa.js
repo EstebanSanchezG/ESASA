@@ -5,7 +5,6 @@ import {MenuOutlined, IdcardOutlined, MailOutlined, ToolOutlined ,TeamOutlined} 
 import Logo from '../assets/esasaLogo.svg'
 import SubMenu from 'antd/es/menu/SubMenu';
 import "./headerStyle.css";
-import axios from 'axios';
 import services from '../DescriptionPage/descripciones-de-servicios.json'
 const {Header, Sider} = Layout;
 
@@ -39,7 +38,7 @@ export default function HeaderEsasa() {
             <Menu mode='horizontal' className='top-menu-header'>
               <div className='menu-text-options'>
                 <Menu.Item key="Identidad">
-                  <a href='/quien_somos'>
+                  <a href='/quien-somos'>
                     <IdcardOutlined/>  Quienes Somos
                   </a>
                 </Menu.Item>

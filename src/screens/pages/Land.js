@@ -1,12 +1,27 @@
-import React from 'react';
-import { Row, Col, Button } from 'antd';
+import {React, useState} from 'react';
+import {NavLink} from 'react-router-dom';
+import { Row, Col, Button, Menu, Dropdown, Space} from 'antd';
+import { DownOutlined} from '@ant-design/icons';
 import HeaderEsasa from '../components/HeaderEsasa/index.js';
 import LandingCarousel from '../components/LandingCarousel/LandingCarousel.js';
+import services from '../components/DescriptionPage/descripciones-de-servicios.json';
 import  '../styles/LandingScreen.css'
+import { useHref } from 'react-router-dom';
 
 
 export default function LandingPage(){
-    
+    const [serviceData, setServices] = useState(services);
+    const DropMenu = (
+        <Menu className='drop-down-menu'>
+            {serviceData && serviceData.map(({ title, id} ) => (
+                <Menu.Item>
+                    <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                </Menu.Item>
+            ))}
+        </Menu>
+    )
+
+
     return(
         <>
             <HeaderEsasa />
@@ -25,8 +40,6 @@ export default function LandingPage(){
                             que confian en nosotros para cualquiera necesidad. Aprené más sobre 
                             nuestros clientes.
                             </div>
-                            <Button type='primary' style={{background:"#348fde"}}
-                                className='landing-page-redirect-button'>Conoce Más</Button>
                         </div>
                     </Row>
                     <Row className='conoce-quien-somos-row'>
@@ -41,12 +54,13 @@ export default function LandingPage(){
                                 de alta calidad.  
                                 </div>
                                 <Button type='primary' style={{background:"#348fde"}}
-                                className='landing-page-redirect-button'>Conoce Más</Button>
+                                className='landing-page-redirect-button' 
+                                href='/quien-somos'>Conoce Más</Button>
                             </div>
                         </Col>
                         <Col flex = "4" />  
                     </Row>
-                    <Row className='cotiza-un-servicio'>
+                    <Row className='observa-servicio-row'>
                         <Col flex = "4" ></Col>
                         <Col flex = "5">             
                             <div className = 'content-container-landing-page'>
@@ -57,12 +71,19 @@ export default function LandingPage(){
                                 Conoce todos los servicios que ESASA ofrece. Aquí irá un 
                                 párrafo que hable sobre los tipos de servicios que se realizan en ESASA. 
                                 </div>
-                                <Button type='primary' style={{background:"#348fde"}}
-                                className='landing-page-redirect-button'>Descubre Servicios</Button>
+                                <Dropdown menu={DropMenu}>                                     
+                                    <Button type='primary' style={{background:"#348fde"}} 
+                                    className='landing-page-redirect-button'>
+                                        <Space>
+                                            Descubre Servicios
+                                            <DownOutlined />
+                                        </Space>
+                                    </Button>
+                                </Dropdown>
                             </div> 
                         </Col>
                     </Row>
-                    <Row className='busca-una-oportunidad'>
+                    <Row className='contacto-a-nosotros-row'>
                         <Col flex = "5" >
                             <div className = 'content-container-landing-page'>
                                 <div className='landing-subheader'>
@@ -73,7 +94,7 @@ export default function LandingPage(){
                                 poder cotizar un proyecto o realizar una consulta. 
                                 </div>
                                 <Button type='primary' style={{background:"#348fde"}}
-                                className='landing-page-redirect-button'>Solicítanos</Button>
+                                className='landing-page-redirect-button' href='/contacto'>Solicítanos</Button>
                             </div> 
                         </Col>
                         <Col flex = "4" />

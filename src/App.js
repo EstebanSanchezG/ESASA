@@ -23,7 +23,7 @@ const Routing = () => {
     <>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/quien_somos" element={<IdentityPage />} />
+        <Route path="/quien-somos" element={<IdentityPage />} />
         <Route path="/servicios/:id" element={<ServicesPage />} />
         <Route path="/contacto" element={<ContactPage />} />
       </Routes>
