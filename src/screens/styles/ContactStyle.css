@@ -13,14 +13,12 @@
     font-weight: 800;
     margin-bottom: 20px;
     
-    color: #364d79;
+    color: #348fde;
 }
 
 
 .contacDescrip{
     text-align: justify;
-    padding-left: 20%;
-    padding-right: 20%;
     font-size: 26px;
 }
 
@@ -37,7 +35,7 @@
     font-size: 20px;
     font-weight: 200;
     margin-bottom: 30px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .contact-point-text{
@@ -45,7 +43,40 @@
     font-weight: 200;
 }
 
-.contact-form{   
-  display: flex;
-  justify-content: center;
+.contact-form{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
+
+.contact-label--form{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+input, textarea{
+    margin-top: 2px;
+    align-items: center;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+.submit-contact-form{
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    background-color: #348fde;
+    border:none;
+    margin-top: 1em;
+    font-size: 20px;
+}
+

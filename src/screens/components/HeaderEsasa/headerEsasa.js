@@ -37,7 +37,7 @@ export default function HeaderEsasa() {
             </Link>
             <Menu mode='horizontal' className='top-menu-header'>
               <div className='menu-text-options'>
-                <Menu.Item key="Identidad">
+                <Menu.Item>
                   <a href='/quien-somos'>
                     <IdcardOutlined/>  Quienes Somos
                   </a>
@@ -46,12 +46,12 @@ export default function HeaderEsasa() {
                 <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <Menu.Item>
-                          <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                          <NavLink reloadDocument to = {`/servicios/${id}`} key={id}>{title}</NavLink>
                         </Menu.Item>
                     ))}
                 </SubMenu>
 
-                <Menu.Item key="Contacto">
+                <Menu.Item>
                   <a href = "/contacto">
                     <MailOutlined/>
                     <span>Contáctenos</span>
@@ -83,7 +83,7 @@ export default function HeaderEsasa() {
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <p>
                           <a>
-                          <NavLink style={{color:"grey"}} reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                          <NavLink style={{color:"grey"}} key={id} reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
                           </a>
                         </p>
                     ))}
@@ -105,7 +105,6 @@ export default function HeaderEsasa() {
         </div>
 
       </Header>
-      <body></body>
     </>
   )
 };

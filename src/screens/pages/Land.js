@@ -4,28 +4,29 @@ import { Row, Col, Button, Menu, Dropdown, Space} from 'antd';
 import { DownOutlined} from '@ant-design/icons';
 import HeaderEsasa from '../components/HeaderEsasa/index.js';
 import LandingCarousel from '../components/LandingCarousel/LandingCarousel.js';
-import services from '../components/DescriptionPage/descripciones-de-servicios.json';
+import servicios from '../components/DescriptionPage/descripciones-de-servicios.json';
 import  '../styles/LandingScreen.css'
-import { useHref } from 'react-router-dom';
 
 
 export default function LandingPage(){
-    const [serviceData, setServices] = useState(services);
-    const DropMenu = (
-        <Menu className='drop-down-menu'>
-            {serviceData && serviceData.map(({ title, id} ) => (
-                <Menu.Item>
-                    <NavLink reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
-                </Menu.Item>
-            ))}
-        </Menu>
-    )
-
+    const [serviciosData, setServicios] = useState(servicios);
+    
+    const menuDrop = () => {
+        return(
+            <Menu className='landing-page-service-dropdown'>
+               {serviciosData && serviciosData.map(({ title, id} ) => (
+                    <Menu.Item>
+                        <NavLink reloadDocument to = {`/servicios/${id}`} key={id}>{title}</NavLink>
+                    </Menu.Item>
+                    ))}
+            </Menu>
+        )
+    };
+            
 
     return(
         <>
             <HeaderEsasa />
-            <body>
             <div className='page--custom--body'>
                 <LandingCarousel autoplay autoplaySpeed={4000} />
                 <div className='landing-page-content'> 
@@ -34,7 +35,7 @@ export default function LandingPage(){
                             <div className='landing-subheader'>
                                 AÑOS DE CALIDAD DETRÁS DE CADA PROYECTO
                             </div>
-                            <div class='landing-subdescription'>
+                            <div className='landing-subdescription'>
                             En Esteban Sánchez y Asociados, nos defininmos no por lo que no hacemos,
                             pero por lo que podemos hacer a usted. Hemos cultivado una red de clientes
                             que confian en nosotros para cualquiera necesidad. Aprené más sobre 
@@ -48,7 +49,7 @@ export default function LandingPage(){
                                 <div className='landing-subheader'>
                                     QUIENES SOMOS
                                 </div>
-                                <div class='landing-subdescription'>
+                                <div className='landing-subdescription'>
                                 Llevamos 44 años atendiendo a las grandes empresas de México y EUA,
                                 enfrentando alos retos que marca la industria y aportando soluciones
                                 de alta calidad.  
@@ -67,11 +68,11 @@ export default function LandingPage(){
                                 <div className='landing-subheader'>
                                     SERVICIOS DE TODO
                                 </div>
-                                <div class='landing-subdescription'>
+                                <div className='landing-subdescription'>
                                 Conoce todos los servicios que ESASA ofrece. Aquí irá un 
                                 párrafo que hable sobre los tipos de servicios que se realizan en ESASA. 
                                 </div>
-                                <Dropdown menu={DropMenu}>                                     
+                                <Dropdown overlay={menuDrop} trigger={['click']}>                                                                  
                                     <Button type='primary' style={{background:"#348fde"}} 
                                     className='landing-page-redirect-button'>
                                         <Space>
@@ -89,7 +90,7 @@ export default function LandingPage(){
                                 <div className='landing-subheader'>
                                     ESTEMOS EN CONTACTO
                                 </div>
-                                <div class='landing-subdescription'>
+                                <div className='landing-subdescription'>
                                 Un párrafo que invita al usuario a contactar a la empresa y
                                 poder cotizar un proyecto o realizar una consulta. 
                                 </div>
@@ -101,7 +102,6 @@ export default function LandingPage(){
                     </Row>
                 </div>
             </div>
-            </body>
         </>
     )
 }

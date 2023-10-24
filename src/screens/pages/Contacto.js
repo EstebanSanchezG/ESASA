@@ -1,21 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import { useForm } from 'antd/es/form/Form.js';
 import ReactDOM from 'react-dom'
 import HeaderEsasa from '../components/HeaderEsasa/index.js';
 import OfficeLocationHMO from '../components/OfficeLocationHMO/OfficeLocationHMO.js';
 import {Row, Button, Select, Input, Form, Col} from 'antd';
+import emailjs from '@emailjs/browser';
 import "../styles/ContactStyle.css"
+
 
 const StyleContact = {
     textAlign: "center",
 };
 
 export default function ContactPage(){
-    //const [form] = Form.useForm();
-    const onFinish = (values) => {
-        console.log('Gracias por ingresar: ', values);
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_vkdbeyc', 'template_sl6xu1r', form.current, 'Kb-GTy5aTaAC5wuTL')
+        .then((result) => {
+            console.log(result.text);
+            window.location.reload(false)
+            alert("Su solicitud se ha enviado correctamente")
+        }, (error) => {
+            console.log(error.text);
+        });
     };
 
-        return(
+    return(
         <>
             <HeaderEsasa />
             <body>
@@ -35,53 +49,24 @@ export default function ContactPage(){
                 </Row>
 
                 <div className='contact-form'>
-                    <Form 
-                    layout='vertical'
-                    name="Solicita Consulta o Dudas"
-                    onFinish={onFinish}
-                    labelCol={{span: 4}}
-                    wrapperCol={{span: 18}}
-                    style={{maxWidth:1000, marginTop:"35px", width:"100%", marginLeft:"200px" }}
-                    scrollToFirstError>
-                        
-                        <Form.Item name="name" label="Nombre"
-                        rules={[{
-                            required: true,
-                            message: 'Favor de añadir un nombre de empresa o individuo',
-                            whitespace: true,
-                        },]}>
-                            <Input size='large' placeholder="Nombre de Individuo/Empresa"/>
-                        </Form.Item>
-                        
-                        <Form.Item name="email" label="E-mail"
-                        rules={[{
-                            type: 'email',
-                            message: 'Esto no es un correo válido, intente de nuevo',
-                        },
-                        {
-                            required: true,
-                            message: 'Ingrese su correo por favor',
-                        },]}>
-                            <Input placeholder='Tu correo electrónico' size='large'/>
-                        </Form.Item>
+                    <form name="Solicita Consulta o Dudas" ref={form} onSubmit={sendEmail}>     
+                        <label className='contact-label--form'>Nombre Completo</label>
+                        <input className='contact-input--form' type="text" name="user_name" required
+                        onInvalid={e => e.target.setCustomValidity('Ingrese su nombre aquí')}
+                        onInput={e => e.target.setCustomValidity('')}/>
 
-                        <Form.Item name="descripción" label="Descripción de Asunto"
-                        rules={[{
-                            required: true,
-                            message: 'Ingrese motivo de consulta',
-                        },]}>
-                            <Input.TextArea showCount maxLength={300} size='large'
-                            placholder="Describa la razón de consulta aquí"
-                            style={{height:300}}/>
-                        </Form.Item>
+                        <label className='contact-label--form'>Email</label>
+                        <input className='contact-input--form' type="email" name="user_email" required
+                        onInvalid={e => e.target.setCustomValidity('Ingrese un correo válido')}
+                        onInput={e => e.target.setCustomValidity('')}/>
+                        
+                        <label className='contact-label--form'>Mensaje</label>
+                        <textarea name="user_message" required
+                        onInvalid={e => e.target.setCustomValidity('Se requiere conocer su necesidad')}
+                        onInput={e => e.target.setCustomValidity('')}/>
 
-                        <Form.Item>
-                            <Button type="primary" htmlType="submit" 
-                            style={{display:"flex",justifyContent:"center"}}>
-                            Enviar Solicitud
-                            </Button>
-                        </Form.Item>    
-                    </Form>
+                        <input  className="submit-contact-form" type="submit" value="Send"/>
+                    </form>   
                 </div>
 
                 <div className='contact-points' style={{marginTop:35}}>
