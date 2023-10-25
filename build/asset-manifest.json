@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ESASA/static/css/main.2bd0b740.css",
-    "main.js": "/ESASA/static/js/main.bf48c8fa.js",
+    "main.js": "/ESASA/static/js/main.b2478500.js",
     "static/js/787.0d855b6f.chunk.js": "/ESASA/static/js/787.0d855b6f.chunk.js",
     "static/media/servicios.png": "/ESASA/static/media/servicios.54fc2014e9d5644c0cc8.png",
     "static/media/Vision.png": "/ESASA/static/media/Vision.5e9dc3b068527996c1c7.png",
@@ -15,11 +15,11 @@
     "static/media/esasaLogo.svg": "/ESASA/static/media/esasaLogo.f5b557a65ff359e320c8b4bda885c4c6.svg",
     "index.html": "/ESASA/index.html",
     "main.2bd0b740.css.map": "/ESASA/static/css/main.2bd0b740.css.map",
-    "main.bf48c8fa.js.map": "/ESASA/static/js/main.bf48c8fa.js.map",
+    "main.b2478500.js.map": "/ESASA/static/js/main.b2478500.js.map",
     "787.0d855b6f.chunk.js.map": "/ESASA/static/js/787.0d855b6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2bd0b740.css",
-    "static/js/main.bf48c8fa.js"
+    "static/js/main.b2478500.js"
   ]
 }

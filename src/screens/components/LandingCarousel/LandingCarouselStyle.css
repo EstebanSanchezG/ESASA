@@ -15,9 +15,9 @@
 }
 
 .image-content-carousel-1{
-    color: white;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    margin-left: 15px;
+    color: rgb(255, 255, 255, 1);
+    background-color: rgb(0, 0, 0, 0.3);
+    padding-left: 15px;
     text-align: left;
 }
 
@@ -27,6 +27,7 @@
     height: 50px;
     padding-bottom: 0px;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 .image-text-carousel-1{
@@ -44,10 +45,9 @@
 }
 
 .image-content-carousel-2{
-    color: white;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    margin-right: 15px;
-    margin-top: 400px;
+    color: rgb(255, 255, 255, 1);
+    background-color: rgb(0, 0, 0, 0.3);
+    padding-right: 15px;
     text-align: right;
 }
 
@@ -56,7 +56,9 @@
     font-weight: 800;
     height: 50px;
     padding-bottom: 0px;
+    padding-top: 0;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 .image-text-carousel-2{

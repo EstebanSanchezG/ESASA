@@ -70,7 +70,7 @@ export default function HeaderEsasa() {
             placement="left" onClose={onClose} open={open}> 
               <div className='side-menu-text-option'>  
                 <p>
-                  <a href='/quien_somos'>
+                  <a href='/quien-somos'>
                     <IdcardOutlined/>  Quienes Somos
                   </a>
                 </p>

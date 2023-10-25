@@ -36,7 +36,8 @@
     color: #348fde;
 }
 .individual-client-description{
-    text-align: left;
+    display: flex;
+    text-align: justify;
     font-weight: 400;
     font-size: 21px;
     color:#464646;

@@ -145,11 +145,11 @@
          "MEDICIÓN DE PUESTA\nA TIERRA" 
       ],
       "clientes_desc":[
-         "Aplicación en transformadores para\nver la relación de transformación\n(Número de vueltas de las bobinas por\nTAP) Tap Punto de conexión de cada\nbobina para seleccionar el voltaje que\nrequiere un transformador.",
-         "Aplicación en transformadores, apartarrayos,\ncables,interruptores, aisladores, motores,\netc. con el objetivo de medir la resistencia de\naislamiento entre fases, fases contra tierra,\nentre bobinas, bobinas contra tierra.",
-         "Aplicación en equipos, tableros,\nmotores, instalaciones eléctricas con el\nobjetivo de localizar defectos en\ninstalaciones eléctricas tales como,\npuntos calientes por falsos contactos o\nconexiones flojas, sobrecarga en\ntableros o cables, interruptores con\ndaño por calentamiento en contactos\ninternos.",
-         "Medir consumos de energía KWH, KW, KVA,\namperaje, voltaje, factor de potencia,\narmónicos.",
-         "Mediciones de tierras de subestaciones,\nsite, cuartos de químicos y residuos\npeligrosos, pararrayos, tableros, estructuras\nde plantas, entre otras instalaciones."
+         "Aplicación en  transformadores para  ver\nla relación  de  transformación  (Número\nde vueltas de  las  bobinas  por  TAP) Tap\nPunto de conexión de cada  bobina para\nseleccionar  el  voltaje  que  requiere  un\ntransformador.",
+         "Aplicación en transformadores, apartarra-\nyos,    cables,    interruptores,   aisladores,\nmotores, etc.  con  el  objetivo  de  medir\nla resistencia  de  aislamiento entre fases,\nfases contra tierra, entre bobinas, bobinas\ncontra tierra.",
+         "Aplicación en  equipos, tableros, motores,\ninstalaciones eléctricas con el objetivo de\nlocalizar    defectos      en     instalaciones\neléctricas  tales  como,   puntos  calientes\npor falsos contactos o   conexiones flojas,\nsobrecarga    en      tableros    o     cables,\ninterruptores con daño por calentamiento\nen contactos internos.",
+         "Medir consumos  de energía  KWH,  KW,\nKVA ,    amperaje ,    voltaje ,    factor  de\npotencia, armónicos.",
+         "Mediciones  de  tierras  de  subestaciones,\nsite,    cuartos    de   químicos  y  residuos\npeligrosos, pararrayos, tableros, estructu-\nras de plantas, entre otras instalaciones."
       ]
      },
      {

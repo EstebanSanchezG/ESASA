@@ -33,7 +33,7 @@
 
 .landing-subheader{
     font-size: 36px;
-    color: #364d79;
+    color: #348fde;
     font-weight: 700;
     margin-bottom: 5%;
 }
@@ -48,7 +48,7 @@
 
 .conoce-quien-somos-row {
     background-image: url("../../assets/conocenos.png");
-    background-position: 0px -200px;
+    background-position: 0px -20px;
     background-repeat: no-repeat;
     background-size:cover;
     margin-bottom: 25px;
@@ -63,7 +63,7 @@
 
 .contacto-a-nosotros-row {
     background-image: url("../../assets/contactanos.png");
-    background-position: 0px -150px;
+    background-position: 0px -10px;
     background-repeat: no-repeat;
     background-size: cover;  
     margin-bottom: 25px;
