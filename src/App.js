@@ -22,10 +22,10 @@ const Routing = () => {
   return(
     <>
       <Routes>
-        <Route path="ESASA/" element={<LandingPage />} />
-        <Route path="ESASA/quien-somos" element={<IdentityPage />} />
-        <Route path="ESASA/servicios/:id" element={<ServicesPage />} />
-        <Route path="ESASA/contacto" element={<ContactPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/quien-somos" element={<IdentityPage />} />
+        <Route path="/servicios/:id" element={<ServicesPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
       </Routes>
     </>
   )
