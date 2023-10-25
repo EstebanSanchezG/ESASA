@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/ESASA/static/css/main.2bd0b740.css",
-    "main.js": "/ESASA/static/js/main.b2478500.js",
+    "main.css": "/ESASA/static/css/main.535b3a91.css",
+    "main.js": "/ESASA/static/js/main.4ac26adb.js",
     "static/js/787.0d855b6f.chunk.js": "/ESASA/static/js/787.0d855b6f.chunk.js",
     "static/media/servicios.png": "/ESASA/static/media/servicios.54fc2014e9d5644c0cc8.png",
+    "static/media/contactanos.png": "/ESASA/static/media/contactanos.407da4e68423aec08915.png",
     "static/media/Vision.png": "/ESASA/static/media/Vision.5e9dc3b068527996c1c7.png",
     "static/media/calidad.png": "/ESASA/static/media/calidad.1220630937e766a17941.png",
     "static/media/conocenos.png": "/ESASA/static/media/conocenos.b8462939c54245d8510c.png",
@@ -11,15 +12,14 @@
     "static/media/Chihuahua2011.png": "/ESASA/static/media/Chihuahua2011.357147530bd07408f693.png",
     "static/media/Experiencia.png": "/ESASA/static/media/Experiencia.43955b981ee97909eb95.png",
     "static/media/Mision.png": "/ESASA/static/media/Mision.6413feb9aec1ad9768f5.png",
-    "static/media/contactanos.png": "/ESASA/static/media/contactanos.b47c73bab0d356e00691.png",
     "static/media/esasaLogo.svg": "/ESASA/static/media/esasaLogo.f5b557a65ff359e320c8b4bda885c4c6.svg",
     "index.html": "/ESASA/index.html",
-    "main.2bd0b740.css.map": "/ESASA/static/css/main.2bd0b740.css.map",
-    "main.b2478500.js.map": "/ESASA/static/js/main.b2478500.js.map",
+    "main.535b3a91.css.map": "/ESASA/static/css/main.535b3a91.css.map",
+    "main.4ac26adb.js.map": "/ESASA/static/js/main.4ac26adb.js.map",
     "787.0d855b6f.chunk.js.map": "/ESASA/static/js/787.0d855b6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bd0b740.css",
-    "static/js/main.b2478500.js"
+    "static/css/main.535b3a91.css",
+    "static/js/main.4ac26adb.js"
   ]
 }
