@@ -1,4 +1,4 @@
-html, body, :global (#root) {
+html, body, :global(#root) {
   height: 100%;
 }
 
@@ -8,6 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
  /* temporary font size patch */
-: global (.ant-tag) {
+:global(.ant-tag) {
   font-size: 12px;
 }
