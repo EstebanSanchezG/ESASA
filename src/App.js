@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Navigate, Route, Routes, useParams} from "react-router-dom";
+import {HashRouter, Navigate, Route, Routes, useParams} from "react-router-dom";
 import './App.css';
 import LandingPage from './screens/pages/Land';
 import IdentityPage from './screens/pages/Identidad';
@@ -11,9 +11,9 @@ import Oportunidades from './screens/pages/Oportunidades';
 function App() {
   return (
     <div className='AppStyle'>
-      <BrowserRouter>
+      <HashRouter>
         <Routing />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
