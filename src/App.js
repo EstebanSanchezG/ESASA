@@ -11,7 +11,7 @@ import Oportunidades from './screens/pages/Oportunidades';
 function App() {
   return (
     <div className='AppStyle'>
-      <BrowserRouter basename={'/'}>
+      <BrowserRouter basename={'/ESASA'}>
         <Routing />
       </BrowserRouter>
     </div>
@@ -22,7 +22,7 @@ const Routing = () => {
   return(
     <>
       <Routes>
-        <Route path="" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/quien-somos" element={<IdentityPage />} />
         <Route path="/servicios/:id" element={<ServicesPage />} />
         <Route path="/contacto" element={<ContactPage />} />

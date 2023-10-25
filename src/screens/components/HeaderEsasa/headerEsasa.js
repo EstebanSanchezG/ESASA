@@ -38,24 +38,24 @@ export default function HeaderEsasa() {
             <Menu mode='horizontal' className='top-menu-header'>
               <div className='menu-text-options'>
                 <Menu.Item>
-                  <a href='/quien-somos'>
+                  <Link to='/quien-somos'>
                     <IdcardOutlined/>  Quienes Somos
-                  </a>
+                  </Link>
                 </Menu.Item>
                   
                 <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <Menu.Item>
-                          <NavLink reloadDocument to = {`/servicios/${id}`} key={id}>{title}</NavLink>
+                          <NavLink reloadDocument to = {`/servicios/${id}`}  key={id}>{title}</NavLink>
                         </Menu.Item>
                     ))}
                 </SubMenu>
 
                 <Menu.Item>
-                  <a href = "/contacto">
+                  <Link to = "/contacto">
                     <MailOutlined/>
                     <span>Contáctenos</span>
-                  </a>
+                  </Link>
                 </Menu.Item>
               </div>
 
@@ -70,9 +70,9 @@ export default function HeaderEsasa() {
             placement="left" onClose={onClose} open={open}> 
               <div className='side-menu-text-option'>  
                 <p>
-                  <a href='/quien-somos'>
+                  <Link to="/quien-somos">
                     <IdcardOutlined/>  Quienes Somos
-                  </a>
+                    </Link>
                 </p>
                 <p>
                   <a onClick={showChildrenDrawer}>
@@ -82,18 +82,18 @@ export default function HeaderEsasa() {
                   onClose={onChildrenDrawerClose} open={childrenDrawer}>
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <p>
-                          <a>
+                          <Link>
                           <NavLink style={{color:"grey"}} key={id} reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
-                          </a>
+                          </Link>
                         </p>
                     ))}
                   </Drawer>
                 </p>
                 <p>
-                  <a href = "/contacto">
+                  <Link to = "/contacto">
                     <MailOutlined/>
                     <span> Contáctenos</span>
-                  </a>
+                  </Link>
                   </p>
               </div>
             </Drawer>
