@@ -46,7 +46,7 @@ export default function HeaderEsasa() {
                 <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <Menu.Item>
-                          <NavLink reloadDocument to = {`/servicios/${id}`}  key={id}>{title}</NavLink>
+                          <Link reloadDocument to = {`/servicios/${id}`}  key={id}>{title}</Link>
                         </Menu.Item>
                     ))}
                 </SubMenu>
@@ -82,9 +82,9 @@ export default function HeaderEsasa() {
                   onClose={onChildrenDrawerClose} open={childrenDrawer}>
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <p>
-                          <Link>
-                          <NavLink style={{color:"grey"}} key={id} reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
-                          </Link>
+                          <a>
+                          <Link style={{color:"grey"}} key={id} reloadDocument to = {`/servicios/${id}`}>{title}</Link>
+                          </a>
                         </p>
                     ))}
                   </Drawer>
