@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='AppStyle'>
-      <BrowserRouter basename={'/'}>
+      <BrowserRouter basename={'/ESASA'}>
         <Routing />
       </BrowserRouter>
     </div>
