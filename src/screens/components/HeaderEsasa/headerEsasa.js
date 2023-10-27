@@ -1,15 +1,15 @@
 import React, { useState} from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import {Layout, Menu, Button, Drawer} from 'antd';
-import {MenuOutlined, IdcardOutlined, MailOutlined, ToolOutlined ,TeamOutlined} from '@ant-design/icons';
+import {MenuOutlined, IdcardOutlined, MailOutlined, ToolOutlined } from '@ant-design/icons';
 import Logo from '../assets/esasaLogo.svg'
 import SubMenu from 'antd/es/menu/SubMenu';
 import "./headerStyle.css";
 import services from '../DescriptionPage/descripciones-de-servicios.json'
-const {Header, Sider} = Layout;
+const {Header} = Layout;
+
 
 export default function HeaderEsasa() {
-
   const [serviceData, setServices] = useState(services);
   const [open, setOpen] = useState(false);
   const [childrenDrawer, setChildrenDrawer] = useState(false);
@@ -46,7 +46,7 @@ export default function HeaderEsasa() {
                 <SubMenu title={<span><ToolOutlined/>  Nuestros Servicios</span>} >
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <Menu.Item>
-                          <Link reloadDocument to = {`/servicios/${id}`}  key={id}>{title}</Link>
+                          <Link reloadDocument to = {`/servicios/${id}`}>{title}</Link>
                         </Menu.Item>
                     ))}
                 </SubMenu>
@@ -75,16 +75,16 @@ export default function HeaderEsasa() {
                     </Link>
                 </p>
                 <p>
-                  <a onClick={showChildrenDrawer}>
+                  <Button onClick={showChildrenDrawer}>
                     <ToolOutlined/>  Nuestros Servicios
-                  </a>
+                  </Button>
                   <Drawer title="Nuestros Servicios" width={320} placement='left'
                   onClose={onChildrenDrawerClose} open={childrenDrawer}>
                     {serviceData && serviceData.map(({ title, id} ) => (
                         <p>
-                          <a>
-                          <Link style={{color:"grey"}} key={id} reloadDocument to = {`/servicios/${id}`}>{title}</Link>
-                          </a>
+                          <Button>
+                          <NavLink  style={{color:"grey"}} key={id} reloadDocument to = {`/servicios/${id}`}>{title}</NavLink>
+                          </Button>
                         </p>
                     ))}
                   </Drawer>
