@@ -33,13 +33,13 @@ export default function LandingPage(){
                     <Row className='conoce-clientes-calidad-row'>           
                         <div className = 'content-container-landing-page-principal'>
                             <div className='landing-subheader'>
-                                AÑOS DE CALIDAD DETRÁS DE CADA PROYECTO
+                                AÑOS DE CALIDAD DETRÁS DE CADA PROYECTO. ESTE TEXTO ES PLACEHOLDER
                             </div>
                             <div className='landing-subdescription'>
-                            En Esteban Sánchez y Asociados, nos defininmos no por lo que no hacemos,
+                            En Esteban Sánchez y Asociados, nos definimos no por lo que hacemos,
                             pero por lo que podemos hacer a usted. Hemos cultivado una red de clientes
-                            que confian en nosotros para cualquiera necesidad. Aprené más sobre 
-                            nuestros clientes.
+                            que confian en nosotros para cualquiera necesidad. Aprendé más sobre 
+                            nuestros clientes. ESTE TEXTO ES PLACEHOLDER
                             </div>
                         </div>
                     </Row>
@@ -52,7 +52,7 @@ export default function LandingPage(){
                                 <div className='landing-subdescription'>
                                 Llevamos 44 años atendiendo a las grandes empresas de México y EUA,
                                 enfrentando alos retos que marca la industria y aportando soluciones
-                                de alta calidad.  
+                                de alta calidad. ESTE TEXTO ES PLACEHOLDER  
                                 </div>
                                 <Button type='primary' style={{background:"#348fde"}}
                                 className='landing-page-redirect-button' 
@@ -71,6 +71,7 @@ export default function LandingPage(){
                                 <div className='landing-subdescription'>
                                 Conoce todos los servicios que ESASA ofrece. Aquí irá un 
                                 párrafo que hable sobre los tipos de servicios que se realizan en ESASA. 
+                                ESTE TEXTO ES PLACEHOLDER
                                 </div>
                                 <Dropdown overlay={menuDrop} trigger={['click']}>                                                                  
                                     <Button type='primary' style={{background:"#348fde"}} 
@@ -92,7 +93,7 @@ export default function LandingPage(){
                                 </div>
                                 <div className='landing-subdescription'>
                                 Un párrafo que invita al usuario a contactar a la empresa y
-                                poder cotizar un proyecto o realizar una consulta. 
+                                poder cotizar un proyecto o realizar una consulta. ESTE TEXTO ES PLACEHOLDER
                                 </div>
                                 <Button type='primary' style={{background:"#348fde"}}
                                 className='landing-page-redirect-button' href='/contacto'>Solicítanos</Button>
